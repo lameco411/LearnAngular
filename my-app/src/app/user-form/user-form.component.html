@@ -1,0 +1,8 @@
+<input placeholder="enter user name" [(ngModel)]="name" #txtUserName>
+<h3 [ngStyle]="name.length % 2===0? evenStyle:oddStyle">
+    your name is: {{name}}
+
+</h3>
+<code>{{txtUserName.value|json}}</code>
+<div [class]="isHighLight?'circle':'square'"></div>
+<div [ngClass]="currentClass"></div>
